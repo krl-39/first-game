@@ -17,6 +17,10 @@ var player = {
     let div = document.getElementById("damage");
     div.innerHTML = this.damage();
   },
+  showhealth: function () {
+    let div = document.getElementById("health");
+    div.innerHTML = this.hp();
+  },
 };
 
 var NPC_skeleton = {
