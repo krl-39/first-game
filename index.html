@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="./game.js"></script>
-        <title>Document</title>
-    </head>
-    <body>
-        <p style="color: blue;font-size: larger;font-family: Arial;"
-        >Kill The Monsters! </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./game.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <p style="color: blue; font-size: larger; font-family: Arial;">
+      Kill The Monsters!
+    </p>
 
     <script>
-        function attack() {
-            player.showDamage();
-            NPC_skeleton.showDamage();
-        }
-        
+      function attack() {
+        player.showDamage();
+        NPC_skeleton.showDamage();
+      }
     </script>
-       
+
     <button onclick="attack()">Attack!</button>
-    <div> <p style="color: darkorange ;font-size: larger;font-family: Arial;"> player damage: <span id="damage"></span></p> </div>
-    <div><p style="color:darkred ;font-size: larger;font-family: Arial;">enemy damage: <span id="enemydamage"></span></p> </div>
-      
-    </body>
+    <div>
+      <p style="color: darkorange; font-size: larger; font-family: Arial;">
+        player damage: <span id="damage"></span>
+      </p>
+    </div>
+    <div>
+      <p style="color: darkred; font-size: larger; font-family: Arial;">
+        enemy damage: <span id="enemydamage"></span>
+      </p>
+    </div>
+  </body>
 </html>
