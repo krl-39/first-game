@@ -4,6 +4,10 @@ function rand_damage(low, high) {
 
 var random_damage = rand_damage(20, 30); //damage range 20-30
 
+function playerRemainingHealth() {
+  return player.hp - NPC_skeleton.damage();
+}
+
 var player = {
   hp: 100,
   shield: 20,

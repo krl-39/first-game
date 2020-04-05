@@ -14,8 +14,13 @@
     <script>
       function attack() {
         player.showDamage();
-        player.showHealth();
         NPC_skeleton.showDamage();
+        displayPlayerStatus();
+      }
+      function displayPlayerStatus() {
+        player.hp -= NPC_skeleton.damage();
+        let div = document.getElementById("health");
+        div.innerHTML = player.hp;
       }
     </script>
 
