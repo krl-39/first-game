@@ -17,9 +17,9 @@ var player = {
     let div = document.getElementById("damage");
     div.innerHTML = this.damage();
   },
-  showhealth: function () {
+  showHealth: function () {
     let div = document.getElementById("health");
-    div.innerHTML = this.hp();
+    div.innerHTML = this.hp;
   },
 };
 
